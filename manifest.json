@@ -1,0 +1,32 @@
+{
+
+	"manifest_version": 2,
+	"name": "Stop or Go back",
+	"version": "0.1.1",
+	"author": "Jumptohistory",
+
+	"description": "Adds a button to stop loading page or go back.",
+
+	"applications": {
+		"gecko": {
+			"id": "stoporgoback@jumptohistory.addons.mozilla.org" 
+		}
+	},
+	
+	"permissions": [
+		"activeTab",
+		"tabs"
+	],
+
+	"background": {
+		"scripts": ["background.js"]
+	},
+
+	"browser_action": {
+		"default_icon": {
+			"19": "icons/go-back-button_icon-icons.com_53983.svg",
+			"38": "icons/go-back-button_icon-icons.com_53983.svg"
+		},
+		"default_title": "Go back or stop loading page"
+	}
+}
